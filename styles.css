@@ -1,0 +1,338 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+
+body {
+  color: #333;
+  background-color: #77F296 !important;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #F27E63;
+  color: #fff;
+ 
+}
+
+.header__logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+.nav__link:hover {
+  color: #8E82D9;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.hero {
+  background-color: #F27E63;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 80px;
+  font-family: "Titan One", sans-serif;
+     
+}
+
+.hero__content {
+  max-width: 450px;
+}
+
+.hero__title {
+  font-size: 80px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero__subtitle {
+  color: #fff;
+  margin: 20px 0;
+}
+
+.hero__btn {
+  background-color: #6D49F2;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  font-family: "Titan One", sans-serif;
+}
+
+.hero__btn:hover {
+  opacity: 0.9;
+  background-color: #8E82D9;
+}
+
+.hero__image img {
+  width: 500px;
+  align-items: center;
+  z-index: 1;
+}
+
+.about {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #8E82D9;
+}
+
+.about__title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #77F296;
+}
+
+.about__text {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: aliceblue;
+}
+
+/* PRODUCTOS Y CARRUSEL */
+
+.products-section{
+    background-color: #77F296;
+    padding: 40px 0; 
+    width: 100%;
+}
+
+.products-section h1{
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #8E82D9;
+    font-family: "Titan One", sans-serif;
+}
+.carousel-img {
+  width: 300px;       
+  height: auto;       
+  display: block;     
+  margin: 0 auto;     
+  border-radius: 20px; 
+
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption .btn {
+  background-color: #6D49F2;
+  border: none;
+  font-weight: bold;
+}
+
+.carousel-caption .btn:hover {
+  background-color: #8E82D9;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  padding: 20px; 
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #8E82D9;
+}
+
+/* REGLAS DEL JEUGO */
+.rules {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 80px;
+   background-color: #F2E96D; 
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+}
+
+.rules__text {
+    list-style: disc;          
+    padding-left: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.rules h2{
+    color: #8E82D9;
+    font-family: "Titan One", sans-serif;
+    font-size: 30px;
+}
+
+.rules__content {
+  max-width: 50%;
+}
+
+.rules__title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.rules__text {
+  font-size: 14px;
+}
+
+.rules__image img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+
+/* PIE DE PÁGINA */
+.footer {
+  background-color: #8E82D9;
+  font-family: "Titan One", sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer__item:hover {
+  color: #6D49F2;
+}
+
+/* MEDIA QUERY */
+
+/* TABLET (≤ 1024px) */
+@media (max-width: 1024px) {
+  .hero__title {
+    font-size: 60px;
+  }
+  .hero {
+    padding: 50px;
+  }
+  .products__list {
+    gap: 30px;
+  }
+  .rules {
+    padding: 50px;
+  }
+}
+
+/* TABLET PEQUEÑA / CELULAR HORIZONTAL (≤ 768px) */
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__image img {
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .hero__title {
+    font-size: 50px;
+  }
+
+  .products__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .rules {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .rules__content {
+    max-width: 100%;
+  }
+
+  .rules__image img {
+    width: 280px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/*CELULAR PEQUEÑO (≤ 480px)*/
+@media (max-width: 480px) {
+  .hero {
+    padding: 30px 20px;
+  }
+
+  .hero__title {
+    font-size: 40px;
+  }
+
+  .hero__subtitle {
+    font-size: 14px;
+  }
+
+  .hero__btn {
+    padding: 10px 20px;
+  }
+
+  .hero__image img {
+    width: 200px;
+  }
+
+  .about__text {
+    padding: 0 10px;
+  }
+
+  .product__img {
+    width: 120px;
+  }
+
+  .rules {
+    padding: 30px 20px;
+  }
+
+  .rules__image img {
+    width: 230px;
+  }
+}

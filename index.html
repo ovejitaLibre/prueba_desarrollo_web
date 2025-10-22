@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop It</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__logo">POP IT</div>
+        <nav class="header__nav">
+            <a href="#" class="nav__link">Sobre nosotros</a>
+            <a href="#" class="nav__link">Descuentos</a>
+            <a href="#" class="nav__link">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- PORTADA PRINCIPAL -->
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">POP IT!</h1>
+            <p class="hero__subtitle">El mejor juguete antiestrés - ¡burbujeo infinito!</p>
+            <button class="hero__btn">Comprar</button>
+        </div>
+        <div class="hero__image">
+            <img src="images/background.jpg" alt="Pop It principal">
+        </div>
+
+    </section>
+
+    <!-- ¿QUÉ ES POP IT? -->
+    <section class="about">
+        <h2 class="about__title">¿Qué es Pop It?</h2>
+        <p class="about__text">
+            Pop It se traduce literalmente como “revienta esto”. Es un juguete infantil que imita la sensación de presionar plástico de burbujas, pero a diferencia de este, los botones de silicona pueden volver a usarse una y otra vez.
+        </p>
+    </section>
+
+    <!-- PRODUCTOS Y CARRUSEL -->
+    <section class="text-center my-5 products-section">
+        
+        <h1>Productos</h1>
+
+        <div id="carouselExampleCaptions" class="carousel slide mx-auto" style="max-width: 500px;">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            
+            </div>
+
+            <div class="carousel-inner">
+
+                <!-- PRODUCTO 1-->
+                <div class="carousel-item active">
+                    <img src="images/square.png" class="carousel-img" alt="Pop It cuadrado">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Cuadrado multicolor</h5>
+                    <button class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 2 -->
+                <div class="carousel-item">
+                    <img src="images/amongus.png" class="carousel-img" alt="Pop It Among Us">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Among Us marmolado</h5>
+                    <button class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 3 -->
+                <div class="carousel-item">
+                    <img src="images/round.png" class="carousel-img" alt="Pop It redondo">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Redondo multicolor</h5>
+                    <button class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CONTROLES -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+
+
+    <!-- REGLAS DEL JUEGO -->
+    <section class="rules">
+        <div class="rules__content">
+            <h2 class="rules__title">Reglas del juego</h2>
+            <ul class="rules__text">
+                <li>Los jugadores se turnan para presionar las burbujas.</li>
+                <li>Se debe terminar una fila antes de comenzar otra.</li>
+                <li>No se puede presionar más de 3 burbujas seguidas.</li>
+                <li>Gana quien no deje ninguna opción al rival.</li>
+            </ul>
+        </div>
+        <div class="rules__image">
+            <img src="images/photo.jpg" alt="Niño jugando con Pop It">
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__item">POPIT.COM</div>
+        <div class="footer__item">Métodos de pago</div>
+        <div class="footer__item">Envíos</div>
+        <div class="footer__item">Ventas al por mayor</div>
+        <div class="footer__item">Contacto</div>
+    </footer>
+
+</body>
+</html>
